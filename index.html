@@ -146,6 +146,22 @@
                     <p>In seguito sono presenti una serie di progetti che ho sostenuto durante il mio percorso formativo, sono progetti che variano dal visual design, all'analisi dati tramite python passando per applicazioni per android.</p>
                     <main>
                         <section class="cards">
+                            <div class="card" onclick="showReact()">
+                                <div class="card__image-container">
+                                    <img
+                                            src="assets/img/react.png"
+                                    />
+                                </div>
+                                <div class="card__content">
+                                    <p class="card__title text--medium">
+                                        React
+                                    </p>
+                                    <div class="card__info">
+
+                                        <p class="card__price text--medium" >Scopri</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card" onclick="showTesi()">
                                 <div class="card__image-container">
                                     <img
@@ -283,6 +299,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
         <div id="infoTesi" style="display:none; position: fixed; position:fixed;padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(0,0,0,0.8); z-index: 1031">
             <div style="position: relative; border: 0.5vh solid white; border-radius: 3vh;width: 90%; margin-top: 5vh;margin-left: 5%;background-color: whitesmoke">
                 <div style="position: relative;height: 10vh;background-color: black; border-radius: 3vh;">
@@ -333,6 +350,36 @@
                     <p style="padding: 3vh">
                         Se sei interessato a leggere l'elaborato completo: <a href="https://www.overleaf.com/read/wjcvdmqmzwqm#bc2889" target="_blank" >clicca qui!</a> <br>
                         Dai un occhiata anche alla pubblicazione fatta in collaborazione con: Valerio Bellandi, Stefano Siccardi e Fulvio Frati. <a href="https://www.researchgate.net/publication/361733071_Management_of_Uncertain_Data_in_Event_Graphs" target="_blank">clicca Qui!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="infoReact" style="display:none; position: fixed; position:fixed;padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(0,0,0,0.8); z-index: 1031">
+            <div style="position: relative; border: 0.5vh solid white; border-radius: 3vh;width: 90%; margin-top: 5vh;margin-left: 5%;background-color: whitesmoke">
+                <div style="position: relative;height: 10vh;background-color: black; border-radius: 3vh;">
+                    <p class="titolo">TMDB API</p>
+                    <i class="fa-solid fa-x" style="height:4vh;color: whitesmoke;float: right;margin-right: 3vh;margin-top: 3vh;cursor: pointer"  onclick="clickReact()"> </i>
+                </div>
+                <div style="position:relative; overflow-y: scroll; overflow-x: hidden; height: 80vh">
+                    <p style="padding: 3vh">
+                        Progetto sviluppato in react che sfrutta le API di TMDB. Con questa web application è possibile vedere i film più popolari del momento, ottenere informazioni su di essi come
+                        trama, voto medio, cast e film simili. Inoltre è possibile cercare per nome un film.
+
+                    </p>
+                    <div class="row" style="padding: 3vh">
+                        <div class="col-md-3 py-2 py-md-0" >
+                            <img src="assets/img/react.png" style="width: 100%;height: 300px;object-fit: cover">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/img/react2.png" style="width: 100%;height: 300px;object-fit: cover">
+                        </div>
+                        <div class="col-md-3 py-2 py-md-0">
+                            <img src="assets/img/react3.png" style="width: 100%;height: 300px;object-fit: cover">
+                        </div>
+
+                    </div>
+                    <p style="padding: 3vh">
+                        Se vuoi scaricare il codice e provare l'applicazione: <a href="assets/img/app-react.zip" download="app-react.zip">Download</a> <br>
                     </p>
                 </div>
             </div>
@@ -598,6 +645,9 @@
 
     </body>
     <script>
+        function clickReact(){
+            document.getElementById("infoReact").style.display="none";
+        }
         function click() {
             document.getElementById("infoTesi").style.display="none";
         }
@@ -624,6 +674,9 @@
         }
         function showTesi(){
             document.getElementById("infoTesi").style.display="block";
+        }
+        function showReact(){
+            document.getElementById("infoReact").style.display="block";
         }
 
         function showAttori() {
