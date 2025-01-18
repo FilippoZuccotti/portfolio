@@ -50,7 +50,7 @@
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/filippo-zuccotti-96845229b/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="assets/img/ZuccottiFilippo_CV.pdf" download="ZuccottiFilippo_CV.pdf"><i class="fa-solid fa-file-word"></i></a>
+                        <a class="social-icon" href="assets/img/cv_zuccotti.zip" download="cv_zuccotti.zip"><i class="fa-solid fa-file-word"></i></a>
                     </div>
                 </div>
             </section>
@@ -140,9 +140,44 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5" style="color: #751C1E">Portfolio</h2>
                     <p>In seguito sono presenti una serie di progetti che ho sostenuto durante il mio percorso formativo, sono progetti che variano dal visual design, all'analisi dati tramite python passando per applicazioni per android.</p>
+                    <h4>Filtra progetti:</h4>
+                    <button class="filter-button card__price text--medium" id="design"  >Desing</button>
+                    <button class="filter-button card__price text--medium" id="coding"  >Coding</button>
                     <main>
                         <section class="cards">
-                            <div class="card" onclick="showReact()">
+                            <div class="card design" onclick="showPFU()">
+                                <div class="card__image-container">
+                                    <img
+                                            src="assets/img/pfu.png"
+                                    />
+                                </div>
+                                <div class="card__content">
+                                    <p class="card__title text--medium">
+                                        Applicazione PFU
+                                    </p>
+                                    <div class="card__info">
+
+                                        <p class="card__price text--medium" >Scopri</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card design" onclick="showWeCare()">
+                                <div class="card__image-container">
+                                    <img
+                                            src="assets/img/wecare.png"
+                                    />
+                                </div>
+                                <div class="card__content">
+                                    <p class="card__title text--medium">
+                                        WE care
+                                    </p>
+                                    <div class="card__info">
+
+                                        <p class="card__price text--medium" >Scopri</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card coding" onclick="showReact()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/react.png"
@@ -158,7 +193,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showTesi()">
+                            <div class="card coding" onclick="showTesi()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/tesi.png"
@@ -174,7 +209,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showAttori()">
+                            <div class="card coding" onclick="showAttori()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/attori.png"/>
@@ -189,7 +224,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showIdro()">
+                            <div class="card design" onclick="showIdro()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/idro.png"/>
@@ -204,7 +239,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showAccordo()">
+                            <div class="card coding " onclick="showAccordo()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/accordo3.png"/>
@@ -219,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showTre()">
+                            <div class="card coding" onclick="showTre()">
                                 <div class="card__image-container">
                                     <img src="assets/img/follow.png"/>
                                 </div>
@@ -232,7 +267,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showRisto()">
+                            <div class="card coding" onclick="showRisto()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/risto.png"/>
@@ -247,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showWYM()">
+                            <div class="card design" onclick="showWYM()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/wym.png"/>
@@ -262,7 +297,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" onclick="showGup()">
+                            <div class="card design" onclick="showGup()">
                                 <div class="card__image-container">
                                     <img
                                             src="assets/img/group.png"/>
@@ -346,6 +381,65 @@
                     <p style="padding: 3vh">
                         Se sei interessato a leggere l'elaborato completo: <a href="https://www.overleaf.com/read/wjcvdmqmzwqm#bc2889" target="_blank" >clicca qui!</a> <br>
                         Dai un occhiata anche alla pubblicazione fatta in collaborazione con: Valerio Bellandi, Stefano Siccardi e Fulvio Frati. <a href="https://www.researchgate.net/publication/361733071_Management_of_Uncertain_Data_in_Event_Graphs" target="_blank">clicca Qui!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="infoPFU" style="display:none; position: fixed; position:fixed;padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(0,0,0,0.8); z-index: 1031">
+            <div style="position: relative; border: 0.5vh solid white; border-radius: 3vh;width: 90%; margin-top: 5vh;margin-left: 5%;background-color: whitesmoke">
+                <div style="position: relative;height: 10vh;background-color: black; border-radius: 3vh;">
+                    <p class="titolo">Applicaizone PFU</p>
+                    <i class="fa-solid fa-x" style="height:4vh;color: whitesmoke;float: right;margin-right: 3vh;margin-top: 3vh;cursor: pointer"  onclick="clickPFU()"> </i>
+                </div>
+                <div style="position:relative; overflow-y: scroll; overflow-x: hidden; height: 80vh">
+                    <p style="padding: 3vh">
+                        Il progetto descrive il processo di progettazione e di sviluppo di un’applicazione cross-platform per la gestione del ciclo di smaltimento degli pneumatici fuori uso (PFU).
+                        Si può suddividere in 2 parti, la prima quella di UX/UI design mentre la seconda più incentrata verso la programmazione lato front-end. Penso che sia il progetto che più
+                        rispecchia il mio percroso di studi dato che va a unire la parte grafica e di progettazione alla quella di sviluppo.<br>
+                        Alcune schermate dell'applicazione:
+                    </p>
+                    <div class="row" style="padding: 3vh">
+                        <div class="col-md-3 py-2 py-md-0" >
+                            <img src="assets/img/login_trasp.png" style="width: 70%;object-fit: cover">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/img/gommista_rc.png" style="width: 70%;object-fit: cover">
+                        </div>
+                        <div class="col-md-3 py-2 py-md-0">
+                            <img src="assets/img/cliente_dati_trasp.png" style="width: 70%;object-fit: cover">
+                        </div>
+
+                    </div>
+                    <p style="padding: 3vh">
+                        Per scaricare la presentazione: <a href="assets/img/presentazionePFU.pdf" download="presentazionePFU.pdf">Download</a> <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="infoWeCare" style="display:none; position: fixed; position:fixed;padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(0,0,0,0.8); z-index: 1031">
+            <div style="position: relative; border: 0.5vh solid white; border-radius: 3vh;width: 90%; margin-top: 5vh;margin-left: 5%;background-color: whitesmoke">
+                <div style="position: relative;height: 10vh;background-color: black; border-radius: 3vh;">
+                    <p class="titolo">We care</p>
+                    <i class="fa-solid fa-x" style="height:4vh;color: whitesmoke;float: right;margin-right: 3vh;margin-top: 3vh;cursor: pointer"  onclick="clickWeCare()"> </i>
+                </div>
+                <div style="position:relative; overflow-y: scroll; overflow-x: hidden; height: 80vh">
+                    <p style="padding: 3vh">
+                        In questo progetto mi sono occupato della progettazione e sviluppo dell'interfaccia di un'applicazione dedicata all'organizzazione di caregiver per anziani e persone con disabilità. Ho condotto diversi cicli di iterazione, raccogliendo e implementando feedback dagli utenti per ottimizzare l'usabilità e garantire un'esperienza intuitiva ed efficace.
+                    </p>
+                    <div class="row" style="padding: 3vh">
+                        <div class="col-md-3 py-2 py-md-0" >
+                            <img src="assets/img/wecare1.png" style="width: 70%;object-fit: cover">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/img/wecare2.png" style="width: 70%;object-fit: cover">
+                        </div>
+                        <div class="col-md-3 py-2 py-md-0">
+                            <img src="assets/img/wecare3.png" style="width: 70%;object-fit: cover">
+                        </div>
+
+                    </div>
+                    <p style="padding: 3vh">
+                        Per scaricare la presentazione: <a href="assets/img/wecarePres.pdf" download="wecarePres.pdf">Download</a> <br>
                     </p>
                 </div>
             </div>
@@ -641,6 +735,80 @@
 
     </body>
     <script>
+
+            let buttons = document.querySelectorAll(".filter-button");
+            let contents = document.querySelectorAll('.card');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('filter-button-active');
+                    buttons.forEach(btn => btn.classList.remove('filter-button-active'));
+                    buttons.forEach(btn => btn.classList.remove('cancelCards'));
+                    if (!isActive) {
+                        button.classList.add('filter-button-active');
+                        if(button.id === "design"){
+
+                            console.log("mostra design")
+                            document.querySelectorAll('.design').forEach(content => content.classList.add('showCards'));
+                            document.querySelectorAll('.design').forEach(content => content.classList.remove('cancelCards'));
+                            document.querySelectorAll('.coding').forEach(content => content.classList.remove('showCards'));
+                            document.querySelectorAll('.coding').forEach(content => content.classList.add('cancelCards'));
+                        }else{
+                            document.querySelectorAll('.coding').forEach(content => content.classList.add('showCards'));
+                            document.querySelectorAll('.coding').forEach(content => content.classList.remove('cancelCards'));
+                            document.querySelectorAll('.design').forEach(content => content.classList.remove('showCards'));
+                            document.querySelectorAll('.design').forEach(content => content.classList.add('cancelCards'));
+
+                           // document.querySelectorAll('.design').forEach(content => content.classList.toggle('cancelCards'));
+                            console.log("mostra coding")
+                        }
+                    }
+                    if (!button.classList.contains('filter-button-active')) {
+                        contents.forEach(content => content.classList.remove('cancelCards'));
+                        contents.forEach(content => content.classList.add('showCards'));
+                    }
+                });
+            });
+
+
+
+        function filterProject(){
+            let active = document.getElementsByClassName("filter-button-active");
+
+
+            let arrayActive =[];
+            console.log(active.length)
+            for(let i=0;i<active.length;i++){
+                arrayActive.push(active[i].id)
+            }
+            if(arrayActive.length ==2 ){
+                let design = document.getElementsByClassName("design")
+                for(let i=0;i<design.length;i++){
+                    design[i].classList.add("showCards")
+                }
+                let code = document.getElementsByClassName("coding")
+                for(let i=0;i<code.length;i++){
+                    code[i].classList.add("showCards")
+                }
+            }else if(arrayActive.length ==1){
+               let attivi = document.getElementsByClassName(arrayActive[0]);
+               let cancella;
+               if (attivi =="coding"){
+                   cancella = "design"
+               }else{
+                   cancella ="coding"
+               }
+               let elimina = document.getElementsByClassName(cancella);
+                for(let i=0;i<elimina.length;i++){
+                    elimina[i].classList.add("cancelCards")
+                }
+            }
+        }
+        function clickWeCare(){
+            document.getElementById("infoWeCare").style.display="none";
+        }
+        function clickPFU(){
+            document.getElementById("infoPFU").style.display="none";
+        }
         function clickReact(){
             document.getElementById("infoReact").style.display="none";
         }
@@ -670,6 +838,12 @@
         }
         function showTesi(){
             document.getElementById("infoTesi").style.display="block";
+        }
+        function showWeCare(){
+            document.getElementById("infoWeCare").style.display="block";
+        }
+        function showPFU(){
+            document.getElementById("infoPFU").style.display="block";
         }
         function showReact(){
             document.getElementById("infoReact").style.display="block";

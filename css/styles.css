@@ -11003,6 +11003,11 @@ main {
   color: #ecf0f1;
 }
 
+
+.showCards{
+  display: block;
+}
+
 .cards {
   grid-column: 2 / span 12;
   display: grid;
@@ -11058,6 +11063,16 @@ main {
   padding: 5px 20px;
   background-color: whitesmoke;
   border-radius: 5px;
+}
+.cancelCards{
+  display: none;
+}
+.filter-button{
+  border-radius: 10px;
+}
+.filter-button-active{
+  background-color: #1a1e21;
+  color: white;
 }
 
 @media only screen and (max-width: 1000px) {
